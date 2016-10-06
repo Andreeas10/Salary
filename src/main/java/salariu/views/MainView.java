@@ -21,6 +21,7 @@ public class MainView extends JFrame {
 
 	private IMainViewController mainViewController;
 	private JTextField ssnField;
+	private JButton btnChangeTaxes;
 
 	public void reset() {
 		ssnField.setText("");
@@ -51,7 +52,7 @@ public class MainView extends JFrame {
 		ssnField.setColumns(10);
 
 		JButton addBtn = new JButton("Add");
-		addBtn.setBounds(215, 194, 123, 23);
+		addBtn.setBounds(129, 191, 123, 23);
 		addBtn.setIcon(new ImageIcon(getClass().getClassLoader().getResource("addicon.png")));
 		addBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -75,7 +76,7 @@ public class MainView extends JFrame {
 		getContentPane().add(searchBtn);
 
 		JButton showBtn = new JButton("Show Employee Tabel\r\n");
-		showBtn.setBounds(194, 262, 160, 23);
+		showBtn.setBounds(194, 262, 179, 23);
 		showBtn.setIcon(new ImageIcon(getClass().getClassLoader().getResource("showEmployeeTabelIcon.png")));
 		showBtn.addActionListener(new ActionListener() {
 
@@ -106,6 +107,18 @@ public class MainView extends JFrame {
 		btnUpdate.setBounds(215, 114, 123, 23);
 		getContentPane().add(btnUpdate);
 		btnUpdate.setIcon(new ImageIcon(getClass().getClassLoader().getResource("editIcon.png")));
+		
+		btnChangeTaxes = new JButton("Change Taxes");
+		btnChangeTaxes.setBounds(291, 191, 123, 23);
+		getContentPane().add(btnChangeTaxes);
+		btnChangeTaxes.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
 		btnUpdate.addActionListener(new ActionListener() {
 			
 			@Override

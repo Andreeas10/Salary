@@ -153,4 +153,11 @@ public class MainViewController implements IMainViewController {
 
 	}
 
+	@Override
+	public void adjustTaxes() {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
 }

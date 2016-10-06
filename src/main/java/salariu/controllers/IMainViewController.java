@@ -11,6 +11,7 @@ public interface IMainViewController {
 	public void setMainView(MainView mainView);
 	public void showEmployeeTabel();
 	public void serializedata();
+	public void adjustTaxes();
 	
 
 }
